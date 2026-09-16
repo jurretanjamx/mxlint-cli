@@ -751,7 +751,7 @@ function rule(input) {
 		Language:    LanguageJavascript,
 	}
 
-	result, err := evalTestsuite(rule, tempDir, false, false)
+	result, err := evalTestsuite(rule, tempDir, false, false, nil, nil)
 	if err != nil {
 		t.Fatalf("Failed to evaluate testsuite: %v", err)
 	}
